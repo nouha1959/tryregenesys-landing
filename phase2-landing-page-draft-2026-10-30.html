@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regenesys — Live Longer, Thrive Better</title>
+<!-- DRAFT ONLY — Oct 30, 2026, rev 2 (real tabs + dream box added at Nicole's request).
+     Not published, not pointed at tryregenesys.com.
+     Built from landing-page-build-pack-2026-10-30.md. Nothing here promises
+     bookable care, a price, or an opening date. Raw answers stay in the private
+     Google Form responses; nothing is written to GitHub from this page. -->
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:0 auto;padding:24px;line-height:1.55;color:#1a1a1a}
+  h1{font-size:2rem;line-height:1.2} h2{margin-top:2rem}
+  .hero{background:#eef6f1;padding:24px;border-radius:12px}
+  .btn{display:inline-block;background:#0b6b4a;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600;margin:8px 8px 8px 0}
+  .btn.secondary{background:#fff;color:#0b6b4a;border:2px solid #0b6b4a}
+  .note{background:#fff8e1;padding:16px;border-radius:8px}
+  .dream{background:#eef6f1;border:2px dashed #0b6b4a;padding:20px;border-radius:12px;margin-top:2rem}
+  /* Tabs */
+  .tabs{margin-top:2rem}
+  .tabbar{display:flex;gap:8px;border-bottom:3px solid #0b6b4a}
+  .tabbtn{flex:1;background:#e7e7e7;border:none;border-radius:10px 10px 0 0;padding:14px 10px;font-size:1.05rem;font-weight:700;cursor:pointer;color:#333}
+  .tabbtn.active{background:#0b6b4a;color:#fff}
+  .tabbtn small{display:block;font-weight:400;font-size:.8rem}
+  .panel{border:2px solid #0b6b4a;border-top:none;padding:20px;border-radius:0 0 12px 12px}
+  .panel[hidden]{display:none}
+  iframe{width:100%;border:none;border-radius:8px;background:#fff}
+  footer{margin-top:2rem;font-size:.9rem;color:#555}
+</style>
+</head>
+<body>
+<section class="hero">
+  <h1>Telehealth that actually knows your name.</h1>
+  <p>Regenesys is the personalized telehealth platform being built right now — weight loss, hormones, longevity, and wellness, from a care team that remembers you. Launching soon.</p>
+  <p><strong>We're in pre-launch — no care is bookable yet.</strong> Join the list and be first in when we open.</p>
+  <a class="btn" href="#signup">Join the waitlist</a>
+</section>
+
+<h2>Sound familiar?</h2>
+<ul>
+  <li>Five-minute video visits with a stranger who doesn't know your name</li>
+  <li>A different clinician every time — re-explaining yourself from zero</li>
+  <li>Subscription traps and surprise charges</li>
+  <li>Support that never answers when something goes wrong</li>
+  <li>Care that treats a symptom, never the person</li>
+</ul>
+
+<h2>We're building it differently</h2>
+<ul>
+  <li>A care team that knows you and your history</li>
+  <li>Personalized plans built around your labs and your goals</li>
+  <li>A real community — your telehealth home, not a checkout page</li>
+  <li>Straightforward pricing, no traps</li>
+</ul>
+
+<section class="dream">
+  <h2 style="margin-top:0">What would YOUR dream telehealth company look like?</h2>
+  <p>That's not a slogan — we actually want your answer, in your own words. There's a box for it right inside the waitlist form below (last question, totally optional), and a deeper version in the questionnaire tab. What you write helps decide what we build first.</p>
+  <a class="btn" href="#signup">Write yours in the waitlist form ↓</a>
+</section>
+
+<h2>How pre-launch works</h2>
+<ol>
+  <li>Join the waitlist (Tab 1 below)</li>
+  <li>Help design it — optional extended questionnaire (Tab 2 below)</li>
+  <li>Founding-member updates</li>
+  <li>Early access at launch</li>
+</ol>
+
+<!-- ============ SIGNUP TABS ============ -->
+<section class="tabs" id="signup">
+  <div class="tabbar" role="tablist">
+    <button class="tabbtn active" id="tabbtn-waitlist" onclick="showTab('waitlist')">Join the Waitlist<small>30 seconds — name &amp; email</small></button>
+    <button class="tabbtn" id="tabbtn-questionnaire" onclick="showTab('questionnaire')">Extended Questionnaire<small>Optional — 3 minutes, 17 questions</small></button>
+  </div>
+
+  <div class="panel" id="panel-waitlist" role="tabpanel">
+    <h2 style="margin-top:0">Join the pre-launch waitlist</h2>
+    <p>First name, email, optional phone, your #1 frustration — and, last, the box: <strong>what would your dream telehealth company look like?</strong> Joining does <em>not</em> require the questionnaire.</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSduogkjyhU1AckvtVUQUHdI_yumj4Opjweyf1zcUE-Z73nCQA/viewform?embedded=true" height="900" title="Regenesys Waitlist form">Loading the waitlist form…</iframe>
+    <p><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSduogkjyhU1AckvtVUQUHdI_yumj4Opjweyf1zcUE-Z73nCQA/viewform">Form not loading? Open the waitlist form →</a></p>
+    <p><strong>Want a say in how we build it?</strong> Switch to the <a href="#signup" onclick="showTab('questionnaire')">Extended Questionnaire tab</a> above — it's optional, and joining the waitlist does not require it.</p>
+  </div>
+
+  <div class="panel" id="panel-questionnaire" role="tabpanel" hidden>
+    <h2 style="margin-top:0">Extended questionnaire — help us build it (optional)</h2>
+    <p>17 questions on what frustrates you, what you'd fairly pay, and what your dream telehealth company would include — including an open box to design it in your own words. No diagnoses, medications, or medical details — this is product research, not a medical intake, and answers are reported only as anonymized totals.</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5cvYUoXG4kfmE1NXFY_hqVgdXIV040aNDKuj_RrLFfUGn5g/viewform?embedded=true" height="900" title="Regenesys Telehealth Feedback questionnaire">Loading the questionnaire…</iframe>
+    <p><a class="btn secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSe5cvYUoXG4kfmE1NXFY_hqVgdXIV040aNDKuj_RrLFfUGn5g/viewform">Form not loading? Open the questionnaire →</a></p>
+  </div>
+</section>
+
+<script>
+function showTab(name){
+  document.getElementById('panel-waitlist').hidden = name !== 'waitlist';
+  document.getElementById('panel-questionnaire').hidden = name !== 'questionnaire';
+  document.getElementById('tabbtn-waitlist').classList.toggle('active', name === 'waitlist');
+  document.getElementById('tabbtn-questionnaire').classList.toggle('active', name === 'questionnaire');
+}
+</script>
+
+<footer>
+  <p>Regenesys Telehealth — pre-launch. This page is a draft for Nicole's approval before any hosting or DNS change. No care is bookable yet; no price or opening date is promised.</p>
+</footer>
+</body>
+</html>
